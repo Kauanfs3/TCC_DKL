@@ -7,13 +7,15 @@
       <title>Cadastro endereço</title>
       <link rel="stylesheet" href="../css/cadastra.css">
       <link rel="stylesheet" href="../css/endereco.css">
+      <link rel="stylesheet" href="../css/testes.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-
+<?php session_start(); ?>
    <body>
+
       <div class="questionario">
 
-         <a href="../app/pessoa.html">
+         <a href="../app/pessoa.php">
             <img src="../img/previous.svg">
          </a>     
 
@@ -60,7 +62,7 @@
 
          <div class="form-inner">
 
-            <form action="#" class="signup" method="POST">
+            <form action="formaPag.php" class="signup" method="POST">
 
 
                <div class="caixa">
@@ -78,13 +80,25 @@
                   <input class="box" type="text" name="endereco" id="endereco" required>
                </div>
 
-               <div class="enviar">
-                  <imput href="../app/formaPag.html" type="submit" value="Seguir" id="submit" name="submit"></imput>
-               </div>
+               <input type="submit" name="seguir1" value="seguir" class="test">
 
             </form>          
          </div>
       </div>
-     
+
    </body>
+   <?php 
+      if(isset($_POST['seguir'])){
+         $nome = $_POST['nome'];
+         $email = $_POST['email'];
+         $senha = $_POST['senha'];
+         $telefone = $_POST['telefone'];
+         $dat_n = $_POST['data_nascimento'];
+
+         $pessoal = array($nome,$email,$senha,$telefone,$dat_n);
+
+
+         $_SESSION['pessoal'] = $pessoal;
+      }
+   ?>
 </html>

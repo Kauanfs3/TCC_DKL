@@ -1,17 +1,3 @@
-<?php
-    session_start();
-
-    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-    {
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('Location: login.php');
-    }
-
-    $logado = $_SESSION['email'];
-
-?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,6 +8,7 @@
         <link rel="stylesheet" href="../css/cadastra.css">
         <link rel="stylesheet" href="../css/formaPag.css">        
     </head>
+    <?php session_start(); ?>
     <body>
 
       <div class="questionario">
@@ -102,10 +89,21 @@
                   <imput type="submit" value="Cadastrar" id="submit" name="submit">Seguir</imput>
                </div>
 
-            </form>          
+            </form>   
+            <a href="index.php">voltar</a>       
          </div>
-      </div>
-        
+      </div> 
 
     </body>
+    <?php
+    if(isset($_POST['seguir1'])){
+         $cidade = $_POST['cidade'];
+         $endereco = $_POST['endereco'];
+         $estado = $_POST['estado'];
+         
+        $local = array($cidade,$endereco,$estado);
+
+        $_SESSION['local'] = $local;
+      } 
+      ?>
 </html>
