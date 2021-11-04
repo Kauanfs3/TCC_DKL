@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: Helvetica,"Helvetica Neue",Arial,sans-serif;
+}
+
+html,body{
+  display: grid;
+  place-items: center;
+  background-color: #F6D5B6;
+}
+
+
+.questionario{
+  width: 40rem;
+  height: 60rem;
+  margin-top: 3rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.questionario .titulo{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.questionario .title{
+  width: 50%;
+  font-size: 25px;
+  font-weight: 1000;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.form-inner form .caixa{
+  height: 45px;
+  width: 100%;
+  margin-top: 18px;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.form-inner form .caixa input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  padding: 10px 9px;
+}
+
+.form-inner form .caixa input:hover{
+  transition: 0.3s;
+  border: 1px solid #000000;
+}
+
+
+.enviar{
+  height: 4rem;
+  width: 100%;
+  background: #527471;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-top: 3rem;
+}
+
+
+a[type="submit"]{
+  width: 220px;
+  height: 35px;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  border: 0px;
+  border-radius: 0.3rem;
+  margin-bottom: -49rem;
+}
+
+
+
+.obg{
+  color: red;
+}
+.ti{
+  padding-bottom: 1rem;
+}
+
+.caixa{
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.progresso {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 5rem;  
+  margin-top: 2rem;
+}
+
+.linha1, .linha2, .linha3{
+  background-color: #527471;
+  width: 5rem;
+  height: 0.5rem;
+  margin-top: 1.85rem;
+}
+
+.pessoa, .endereco, .formPag, .pedido{
+  width: 4rem;
+  height: 4rem;
+  background-color: #527471;
+  border-radius: 50%;
+  padding: 0.7rem;
+  color: #ffffff;
+}
+
+.endereco, .formPag, .pedido{
+  padding: 0.9rem;
+}
+
+
+.etapa1, .etapa2, .etapa3, .etapa4{
+  margin-top: 4rem;
+  line-height: 4rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  color: #bebebe;
+}
+
+.etapa1{
+  margin-left: -0.6rem;
+}
+.etapa2{
+  margin-left: -1.4rem;
+}
+.etapa3{
+  margin-left: -1.9rem;
+}
+.etapa4{
+  margin-left: -0.7rem;
+}
+
+
+
+
