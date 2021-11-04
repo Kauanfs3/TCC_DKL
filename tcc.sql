@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26-Out-2021 às 01:58
--- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 8.0.12
+-- Generation Time: 04-Nov-2021 às 14:46
+-- Versão do servidor: 10.1.36-MariaDB
+-- versão do PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `tcc`
+-- Database: `tcc`
 --
 
 -- --------------------------------------------------------
@@ -31,19 +32,20 @@ CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
   `nome_produto` varchar(25) DEFAULT NULL,
   `valor_produto` float NOT NULL,
-  `img_produto` varchar(100) NOT NULL
+  `img_produto` varchar(100) NOT NULL,
+  `categoria` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `produtos`
 --
 
-INSERT INTO `produtos` (`id`, `nome_produto`, `valor_produto`, `img_produto`) VALUES
-(1, 'Perfume testeeee 1', 200, 'p1.jpg'),
-(2, 'Perfume 2', 300, 'p2.jpg'),
-(3, 'Perfume 3', 400, 'p4.jpg'),
-(4, 'Perfume 4', 500, 'p5.jpeg'),
-(5, 'kauan porrinha', 0, 'propaganda.jpg');
+INSERT INTO `produtos` (`id`, `nome_produto`, `valor_produto`, `img_produto`, `categoria`) VALUES
+(1, 'Perfume testeeee 1', 200, 'p1.jpg', 'promocao'),
+(2, 'Perfume 2', 300, 'p2.jpg', 'novidades'),
+(3, 'Perfume 3', 400, 'p4.jpg', 'refils'),
+(4, 'Perfume 4', 500, 'p5.jpeg', 'kits'),
+(5, 'kauan porrinha', 0, 'propaganda.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -77,34 +79,34 @@ INSERT INTO `usuarios` (`id`, `adm`, `nome`, `senha`, `email`, `telefone`, `sexo
 (70, 0, 'duzao', '123', 'duzao@gmail.com', '', '', '2021-10-04', 'qasdfghsdfgd', 'rtytre', 'dfgh');
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `produtos`
+-- Indexes for table `produtos`
 --
 ALTER TABLE `produtos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `cidade` (`cidade`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `produtos`
+-- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de tabela `usuarios`
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
