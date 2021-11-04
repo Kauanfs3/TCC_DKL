@@ -350,10 +350,10 @@ if (isset($_POST['add'])){
 
           <div class="footer-col">
               <h4>Inicio</h4>
-              <p><a href="#">Perfumes</a></p>
-              <p><a href="#">Promoções</a></p>
-              <p><a href="#">Refil</a></p>
-              <p><a href="#">Kits</a></p>
+              <p><a href="../app/perfumes.php">Perfumes</a></p>
+              <p><a href="../app/promocoes.php">Promoções</a></p>
+              <p><a href="../app/refils.php">Refil</a></p>
+              <p><a href="../app/kits.php">Kits</a></p>
           </div>
 
           <div class="footer-col">

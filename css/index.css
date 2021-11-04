@@ -175,7 +175,7 @@ ul li{
 }
 
 .login>form{
-    width: 250rem;
+    width: 25rem;
     margin: 2.5rem auto;
     font-size: 1rem;
 }
@@ -194,7 +194,7 @@ input[type="password"]{
 }
 
 input[type="submit"]{
-    width: 220rem;
+    width: 22rem;
     height: 3.5rem;
     background: #527471;
     font-size: 1.2rem;
@@ -391,7 +391,7 @@ h1.ti{
 
 
 
-/* CADRS */
+/* CARDS */
 
 .container{
     margin-top: 3rem;
