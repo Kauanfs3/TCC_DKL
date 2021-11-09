@@ -48,8 +48,7 @@ if (isset($_POST['remove'])){
     <div class="row px-5">
         <div class="col-md-7">
             <div class="shopping-cart">
-            <a href="index.php">voltar</a>
-                <h6>SACOLA</h6>
+            <a href="index.php"></a>
                 <hr>
                 
 
@@ -59,7 +58,64 @@ if (isset($_POST['remove'])){
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
-                        $result = $db->getData();
+                        $result = $db->getDataPromocao();
+
+                        while ($row = mysqli_fetch_assoc($result)){
+
+                            foreach ($id_produto as $id){
+                                if ($row['id'] == $id){
+                                    cartElement($row['img_produto'], $row['nome_produto'],$row['valor_produto'], $row['id']);
+                                    $total = $total + (int)$row['valor_produto'];
+                                }
+                            }
+                        }
+                    }else{
+                        echo "<h5>Nenhum produto adicionado</h5>";
+                    }
+
+                    $total = 0;
+                    if (isset($_SESSION['cart'])){
+
+                        $id_produto = array_column($_SESSION['cart'], 'id_produto');
+                        $result = $db->getDataNovidades();
+
+                        while ($row = mysqli_fetch_assoc($result)){
+
+                            foreach ($id_produto as $id){
+                                if ($row['id'] == $id){
+                                    cartElement($row['img_produto'], $row['nome_produto'],$row['valor_produto'], $row['id']);
+                                    $total = $total + (int)$row['valor_produto'];
+                                }
+                            }
+                        }
+                    }else{
+                        echo "<h5>Nenhum produto adicionado</h5>";
+                    }
+
+                    $total = 0;
+                    if (isset($_SESSION['cart'])){
+
+                        $id_produto = array_column($_SESSION['cart'], 'id_produto');
+                        $result = $db->getDataRefils();
+
+                        while ($row = mysqli_fetch_assoc($result)){
+
+                            foreach ($id_produto as $id){
+                                if ($row['id'] == $id){
+                                    cartElement($row['img_produto'], $row['nome_produto'],$row['valor_produto'], $row['id']);
+                                    $total = $total + (int)$row['valor_produto'];
+                                }
+                            }
+                        }
+                    }else{
+                        echo "<h5>Nenhum produto adicionado</h5>";
+                    }
+
+                    $total = 0;
+                    if (isset($_SESSION['cart'])){
+
+                        $id_produto = array_column($_SESSION['cart'], 'id_produto');
+                        $result = $db->getDataKits();
 
                         while ($row = mysqli_fetch_assoc($result)){
 
@@ -81,7 +137,7 @@ if (isset($_POST['remove'])){
         <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
 
             <div class="pt-4">
-                <h6>DETALHES DOS PREÇOS</h6>
+                <h6>Informações da compra</h6>
                 <hr>
                 <div class="row price-details">
                     <div class="col-md-6">

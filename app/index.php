@@ -107,14 +107,18 @@ if (isset($_POST['add'])){
             if(isset($_SESSION['cart'])){
               $count= count($_SESSION['cart']);
 
-              echo "<span id=\"cart_count\" class=\"text-warning bg-light\">$count</span>";
+              echo "<span id=\"cart_count\" class=\"contador\">$count</span>";
             }else{
-                    echo "<span id=\"cart_count\" class=\"text-warning bg-light\">0</span>";
+              echo "<span id=\"cart_count\" class=\"contador\">0</span>";
             }
           ?>
         </h4>
       </a> 
       
+      <section class="fundo">
+
+      </section>
+
       <div class="comp menu-section">
         <div class="menu-toggle">
           <div class="one"></div>

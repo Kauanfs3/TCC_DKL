@@ -9,11 +9,12 @@ function component($nomeproduto, $valorproduto, $imgproduto, $idproduto){
                     <img src=\"../img/$imgproduto\">
                       <ul class=\"action\">
                         <li>
-                          <button type=\"submit\"  class=\"btn btn-warning my-3\" name=\"add\">Add to Cart <i class=\"fa fa-shopping-cart\"></i></button>
+                          <button type=\"submit\"  class=\"btn\" name=\"add\"><i class=\"fa fa-shopping-cart\"></i></button>
                           <input type='hidden'  name='id_produto' value='$idproduto'>
+                          <span>Adicionar</span>
                         </li>
                         <li>
-                          <i class=\"fa fa-eye\" aria-hidden=\"true\"></i>
+                          <button type=\"submit\"  class=\"btn\" name=\"add\"><i class=\"fa fa-eye\"></i></button>
                           <span>Ver detalhes</span>
                         </li>
                       </ul>
@@ -46,16 +47,9 @@ function cartElement($imgproduto,$nomeproduto, $valorproduto, $idproduto){
                             <div class=\"col-md-6\">
                                 <h5 class=\"pt-2\">$nomeproduto</h5>
                                 <h5 class=\"pt-2\">$$valorproduto</h5>
-                                <button type=\"submit\" class=\"btn btn-warning\">Salvar</button>
                                 <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Remover</button>
                             </div>
-                            <div class=\"col-md-3 py-5\">
-                                <div>
-                                    <button type=\"button\" class=\"btn bg-light border rounded-circle\"><i class=\"fas fa-minus\"></i></button>
-                                    <input type=\"text\" value=\"1\" class=\"form-control w-25 d-inline\">
-                                    <button type=\"button\" class=\"btn bg-light border rounded-circle\"><i class=\"fas fa-plus\"></i></button>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
       </form>
