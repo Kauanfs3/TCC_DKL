@@ -7,3 +7,4 @@ alteração - 2
 teste bombapach
 
 contador de itens responsivo (sacola)- 10/11
+
