@@ -98,9 +98,5 @@
    </div>
 
 </body>
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$data_n = $_POST['data_nascimento'];
-<?php $pessoa = array($nome,$email,$senha,$data_n) ?>
+
 </html>

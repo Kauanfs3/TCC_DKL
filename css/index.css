@@ -41,7 +41,6 @@ header a svg {
     height: 3rem;
     color: rgb(0, 0, 0);
     margin-right: 2.0rem;
-    transition: 0.5s;
 }
 
 .header {
@@ -902,7 +901,6 @@ p {
         width: 24px;
         margin: 4px auto;
 
-        transition-duration: 0.7s;
         z-index: 3;
 
     }
