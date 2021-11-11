@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -7,22 +6,22 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
-    font-family: Helvetica,"Helvetica Neue",Arial,sans-serif;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
-body{
+body {
     width: 100%;
     background: cornsilk;
     align-content: center;
     justify-content: center;
     min-height: 100vh;
     font-size: 3.0rem;
-    
+
 }
 
-.nome{
+.nome {
     color: rgb(0, 0, 0);
     margin-top: 1rem;
     font-size: 3.0rem;
@@ -31,13 +30,13 @@ body{
 }
 
 
-.logo{
+.logo {
     width: 3.0rem;
     height: 3.0rem;
     margin-top: 2rem;
 }
 
-header a svg{
+header a svg {
     width: 3rem;
     height: 3rem;
     color: rgb(0, 0, 0);
@@ -45,9 +44,9 @@ header a svg{
     transition: 0.5s;
 }
 
-.header{
+.header {
     background-color: #F6D5B6;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 5rem;
@@ -55,30 +54,30 @@ header a svg{
     z-index: 1;
 }
 
-.marca{
+.marca {
     display: flex;
 }
 
-.marca li a{
+.marca li a {
     display: block;
     margin-left: 1rem;
 }
 
-header nav{
+header nav {
     float: right;
     position: relative;
 }
 
-#car_count{
+#car_count {
     text-align: center;
     padding: 0 0.9rem 0.1rem 0.9rem;
     border-radius: 3rem;
-    
+
 }
 
 /*CABEÇALHO INF*/
 
-nav.cabecalho{
+nav.cabecalho {
     width: 100%;
     height: 6.8rem;
     background-color: #F6D5B6;
@@ -96,40 +95,40 @@ nav.cabecalho{
     z-index: 2;
 }
 
-ul{
+ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-.links a{
+.links a {
     color: rgb(0, 0, 0);
     padding: 0 2rem;
     font-size: 1.4rem;
     text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
     color: #527471;
     text-decoration: none;
 }
 
-.conf{
+.conf {
     width: 3rem;
     height: 3rem;
     color: rgb(0, 0, 0);
     margin-right: 2.0rem;
 }
 
-.conf:hover{
+.conf:hover {
     color: #000;
 }
 
-.menu-section nav{
+.menu-section nav {
     display: none;
 }
 
@@ -138,7 +137,7 @@ ul li{
 
 
 
-.arrow-up{
+.arrow-up {
     width: 0;
     height: 0;
     right: 67px;
@@ -153,7 +152,7 @@ ul li{
 }
 
 
-.login{
+.login {
     width: 28rem;
     height: auto;
     right: 6.5rem;
@@ -169,20 +168,21 @@ ul li{
     z-index: 4;
 }
 
-.ent{
+.ent {
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 0.5px;
 }
 
-.login>form{
+.login>form {
     width: 25rem;
     margin: 2.5rem auto;
     font-size: 1rem;
 }
 
-input[type="email"],input[type="text"],
-input[type="password"]{
+input[type="email"],
+input[type="text"],
+input[type="password"] {
     width: 22rem;
     height: 3rem;
     color: rgb(0, 0, 0);
@@ -194,7 +194,7 @@ input[type="password"]{
     font-size: 1.2rem;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     width: 22rem;
     height: 3.5rem;
     background: #527471;
@@ -205,19 +205,21 @@ input[type="submit"]{
     outline: none;
     border: 0px;
     border-radius: 0.3rem;
-    
+
 }
 
-input[type="email"]:hover, input[type="password"]:hover{
+input[type="email"]:hover,
+input[type="password"]:hover {
     transition: 0.3s;
     border: 0.1rem solid #000000;
 }
 
-.help,.ajuda{
+.help,
+.ajuda {
     color: #999999;
     margin-top: 1.5rem;
     margin-bottom: -1.3rem;
-    font-size: 1rem; 
+    font-size: 1rem;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -227,24 +229,24 @@ input[type="email"]:hover, input[type="password"]:hover{
 
 
 /*contador*/
-#cart_count{
-    color: white;
+#cart_count {
+    color: rgb(255, 255, 255);
     position: absolute;
-    margin-left: 4.8rem;
-    margin-top: -1.2rem;
-    font-size: 1.2rem;
+    margin-left: 5rem;
+    margin-top: -1.4rem;
+    font-size: 1.1rem;
     z-index: 5;
 }
 
-.fundo{
+.fundo {
     position: absolute;
-    margin-left: 4rem;
-    margin-top: -1.6rem;
+    margin-left: 4.3rem;
+    margin-top: -1.7rem;
     z-index: 0;
     background-color: black;
-    height: 2.3rem;
-    width: 2.3rem;
-    border: 2.5px solid black;   
+    height: 2rem;
+    width: 2rem;
+    border: 2.5px solid black;
     border-radius: 50%;
 }
 
@@ -261,14 +263,14 @@ input[type="email"]:hover, input[type="password"]:hover{
 
 
 /*intro do site*/
-.intro{
+.intro {
     padding-top: 23rem;
     padding-bottom: 29rem;
     background-image: linear-gradient(#F6D5B6 20%, #ffffff);
 }
 
 
-.intro .qs{
+.intro .qs {
     border: 5px solid #527471;
     width: 35rem;
     height: 20rem;
@@ -278,7 +280,7 @@ input[type="email"]:hover, input[type="password"]:hover{
     position: absolute;
 }
 
-.intro img.qm{
+.intro img.qm {
     position: absolute;
     width: 35rem;
     height: 20rem;
@@ -286,7 +288,7 @@ input[type="email"]:hover, input[type="password"]:hover{
     z-index: 2;
 }
 
-.intro .qi{  
+.intro .qi {
     border: 5px solid #527471;
     width: 35rem;
     height: 20rem;
@@ -296,7 +298,7 @@ input[type="email"]:hover, input[type="password"]:hover{
     z-index: 1;
 }
 
-.intro h2{
+.intro h2 {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -304,12 +306,12 @@ input[type="email"]:hover, input[type="password"]:hover{
     margin-left: -5rem;
 }
 
-.intro h4{
+.intro h4 {
     padding-right: 16rem;
     margin-left: -5rem;
 }
 
-.intro a{
+.intro a {
     font-size: 1.2rem;
     margin-top: 2rem;
     position: absolute;
@@ -320,7 +322,8 @@ input[type="email"]:hover, input[type="password"]:hover{
     color: #527471;
     margin-left: -5rem;
 }
-.intro a:hover{
+
+.intro a:hover {
     text-decoration: none;
     color: #527471;
 }
@@ -329,7 +332,7 @@ input[type="email"]:hover, input[type="password"]:hover{
 
 
 
-.meio{
+.meio {
     padding-top: 15rem;
     padding-bottom: 25rem;
     background-image: linear-gradient(360deg, #F6D5B6 20%, #ffffff);
@@ -337,7 +340,7 @@ input[type="email"]:hover, input[type="password"]:hover{
 }
 
 
-.meio .qs{
+.meio .qs {
     border: 5px solid #527471;
     width: 35rem;
     height: 20rem;
@@ -347,7 +350,7 @@ input[type="email"]:hover, input[type="password"]:hover{
     position: absolute;
 }
 
-.meio img.qm{
+.meio img.qm {
     position: absolute;
     width: 35rem;
     height: 20rem;
@@ -355,7 +358,7 @@ input[type="email"]:hover, input[type="password"]:hover{
     z-index: 2;
 }
 
-.meio .qi{  
+.meio .qi {
     border: 5px solid #527471;
     width: 35rem;
     height: 20rem;
@@ -365,7 +368,7 @@ input[type="email"]:hover, input[type="password"]:hover{
     z-index: 1;
 }
 
-.meio h2{
+.meio h2 {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 3rem;
@@ -373,12 +376,12 @@ input[type="email"]:hover, input[type="password"]:hover{
     margin-right: -8rem;
 }
 
-.meio h4{
+.meio h4 {
     padding-left: 18rem;
     margin-right: -8rem;
 }
 
-.meio a{
+.meio a {
     text-align: left;
     font-size: 1.2rem;
     margin-top: 2rem;
@@ -390,7 +393,8 @@ input[type="email"]:hover, input[type="password"]:hover{
     color: #527471;
     margin-right: -7rem;
 }
-.meio a:hover{
+
+.meio a:hover {
     color: #527471;
     text-decoration: none;
 }
@@ -405,7 +409,7 @@ input[type="email"]:hover, input[type="password"]:hover{
 
 /*titulo*/
 
-.titulo{
+.titulo {
     background-image: url(../img/folha.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -413,11 +417,11 @@ input[type="email"]:hover, input[type="password"]:hover{
     background-attachment: fixed;
     width: 130rem;
     height: 5rem;
-    
+
     text-align: center;
 }
 
-h1.ti{
+h1.ti {
     border-top: 0.9rem solid transparent;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -429,7 +433,7 @@ h1.ti{
 
 /* CARDS */
 
-.container{
+.container {
     margin-top: 3rem;
     position: relative;
     display: grid;
@@ -439,20 +443,20 @@ h1.ti{
     margin-bottom: 6rem;
 }
 
-.container .card{
+.container .card {
     width: 100%;
     background: #f6d5b6;
     border: 1px solid #f7ddc5;
 }
 
-.container .card .imgBx{
+.container .card .imgBx {
     position: relative;
     width: 100%;
     height: 310px;
     overflow: hidden;
 }
 
-.container .card .imgBx img{
+.container .card .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -463,16 +467,17 @@ h1.ti{
     transform-origin: right;
 }
 
-.container .card:hover .imgBx img{
+.container .card:hover .imgBx img {
     transform: scale(1.5);
 }
 
-.action{
+.action {
     position: absolute;
     top: 10px;
     right: 1px;
 }
-.action li{
+
+.action li {
     position: relative;
     list-style: none;
     width: 40px;
@@ -490,18 +495,20 @@ h1.ti{
 }
 
 
-.action li :nth-child(2){
+.action li :nth-child(2) {
     transition-delay: 0.15s;
 }
-.action li:nth-child(3){
+
+.action li:nth-child(3) {
     transition-delay: 0.3s;
 }
 
 
-.container .card:hover .action li{
+.container .card:hover .action li {
     transform: translateX(0px);
 }
-.action li:hover{
+
+.action li:hover {
     transition: 0.5s;
     background: #527471;
 }
@@ -525,12 +532,12 @@ h1.ti{
     z-index: 2;
 }
 
-.action li:hover span{
+.action li:hover span {
     transform: translateY(-50%) translateX(0px);
     opacity: 1;
 }
 
-.action li span::before{
+.action li span::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -541,31 +548,31 @@ h1.ti{
     transform: translateY(-50%) rotate(45deg);
 }
 
-.container .card .content{
+.container .card .content {
     padding: 10px;
 }
 
-.container .card .content .productName h3{
+.container .card .content .productName h3 {
     font-size: 18px;
     font-weight: 500;
     color: rgb(0, 0, 0);
     margin: 5px 0;
 }
 
-.container .card .content .price_rating{
+.container .card .content .price_rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container .card .content .price_rating h2{
+.container .card .content .price_rating h2 {
     font-size: 20px;
     color: rgb(255, 255, 255);
     font-weight: 500;
     letter-spacing: 0.05rem;
 }
 
-.ver{
+.ver {
     position: absolute;
     color: #527471;
     width: 20rem;
@@ -574,18 +581,19 @@ h1.ti{
     text-align: right;
     font-size: 1.4rem;
 }
-.ver:hover{
+
+.ver:hover {
     color: #527471;
     text-decoration: none;
 }
 
 
 /* setas*/
-.owl-dots{
+.owl-dots {
     display: none;
 }
 
-.owl-nav{
+.owl-nav {
     position: absolute;
     top: 38rem;
     left: 47%;
@@ -593,13 +601,14 @@ h1.ti{
     opacity: 0.5;
 }
 
-img{
+img {
     width: 2rem;
     height: 5rem;
 }
 
-.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
-    background: none !important; 
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background: none !important;
     outline: none;
 }
 
@@ -612,7 +621,7 @@ img{
 /*botão subir ao topo*/
 
 
-.scrollTop{
+.scrollTop {
     outline: none;
     border: 0;
     background-color: #f0d0b2;
@@ -633,12 +642,12 @@ img{
     transition: all .4s ease;
 }
 
-.scrollTop.active{
+.scrollTop.active {
     opacity: 1;
     visibility: visible;
 }
 
-.scrollTop img{
+.scrollTop img {
     width: 100%;
     transform: rotate(-90deg);
 }
@@ -670,32 +679,33 @@ img{
 
 /*rodape*/
 
-.contfooter{
+.contfooter {
     max-width: 1170px;
     margin: auto;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-p{
+p {
     list-style: none;
 }
 
-.footer{
+.footer {
     background-color: #F6D5B6;
     padding: 8rem 4rem;
     padding-bottom: 4rem;
 }
 
-.footer-col{
+.footer-col {
     width: 25%;
-    padding: 0 15px;;
+    padding: 0 15px;
+    ;
 }
 
-.footer-col h4{
+.footer-col h4 {
     font-size: 18px;
     text-transform: capitalize;
     margin-bottom: 35px;
@@ -703,9 +713,9 @@ p{
     position: relative;
 }
 
-.footer-col h4::before{
+.footer-col h4::before {
     content: '';
-    position: absolute ;
+    position: absolute;
     bottom: -10px;
     background-color: #527471;
     height: 2px;
@@ -713,7 +723,7 @@ p{
     width: 70px;
 }
 
-.footer-col p a{
+.footer-col p a {
     font-size: 16px;
     text-transform: capitalize;
     text-decoration: none;
@@ -723,11 +733,11 @@ p{
     transition: all 0.3s ease;
 }
 
-.footer-col a:hover{
+.footer-col a:hover {
     color: #527471;
 }
 
-.footer-col .social-links a{
+.footer-col .social-links a {
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -750,58 +760,59 @@ p{
 
 
 
-@media (max-width: 980px){
-    
+@media (max-width: 980px) {
 
-    .intro .qs{
+
+    .intro .qs {
         left: 4rem;
     }
 
-    .intro .qi{
+    .intro .qi {
         left: -1rem;
     }
 
-    .intro img.qm{
+    .intro img.qm {
         left: 2rem;
         z-index: 2;
     }
 
-    .intro h2{
+    .intro h2 {
         margin-top: 0;
     }
-    .intro h4{
+
+    .intro h4 {
         padding-right: 2rem;
     }
 
     /*---------------------------------------------------*/
 
-    .meio .qs{
+    .meio .qs {
         right: -1rem;
     }
 
-    .meio .qi{
+    .meio .qi {
         right: 3rem;
     }
 
-    .meio img.qm{
+    .meio img.qm {
         right: 1rem;
         z-index: 2;
     }
-    
-    .meio h2{
+
+    .meio h2 {
         margin-top: 0;
         margin-right: -8rem;
     }
 
-    .meio h4{
+    .meio h4 {
         padding-left: 10rem;
         padding-right: 2rem;
         margin-right: -10rem;
     }
 
 
-    
-    .footer{
+
+    .footer {
         padding: 8rem 6rem;
     }
 
@@ -816,26 +827,26 @@ p{
 
 
 /* mudar layout - TABLET */
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    nav.cabecalho{
+    nav.cabecalho {
         margin-top: -1.0rem;
     }
 
-    .header{
+    .header {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    .nome{
+    .nome {
         font-size: 2.5rem;
     }
 
-    .liks a{
+    .liks a {
         padding: 0;
     }
-    
-    .sacola{
+
+    .sacola {
         width: 25px;
         height: 25px;
         color: rgb(0, 0, 0);
@@ -844,33 +855,48 @@ p{
         top: 0.4rem;
     }
 
-    .pessoa{
+    /*contador*/
+    #cart_count {
+        margin-left: -4.27rem;
+        margin-top: 1.49rem;
+    }
+
+    .fundo {
+        margin-left: -4.8rem;
+        margin-top: 1.4rem;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .pessoa {
         display: none;
     }
 
-    .conf{
+    .conf {
         display: none;
     }
 
-    .iperfil{
+    .iperfil {
         display: none;
     }
 
-    .scrollTop{
+    .scrollTop {
         display: none;
     }
 
-    .nome{
+    .nome {
         margin-top: 1rem;
     }
 
-    .owl-nav{
+    .owl-nav {
         left: 45.5%;
     }
 
- 
+
     /*botão de colapso*/
-    .one,.two,.three{
+    .one,
+    .two,
+    .three {
         background-color: rgb(0, 0, 0);
         height: 3px;
         width: 24px;
@@ -878,21 +904,21 @@ p{
 
         transition-duration: 0.7s;
         z-index: 3;
-        
+
     }
 
-    .menu-toggle{
+    .menu-toggle {
         width: 30px;
         height: 30px;
         margin-right: 1rem;
         margin-top: 1rem;
     }
 
-    .menu-section.on{
+    .menu-section.on {
         position: absolute;
         top: 0;
         right: 0;
-        
+
         margin-top: -3rem;
         margin-right: -3rem;
         width: 100vw;
@@ -906,38 +932,38 @@ p{
         align-items: center;
     }
 
-    .menu-section.on nav{
+    .menu-section.on nav {
         display: block;
     }
 
-    .menu-section.on .menu-toggle{
+    .menu-section.on .menu-toggle {
         position: absolute;
         right: 1px;
-        top: 1px;        
+        top: 1px;
         margin-right: 4rem;
         margin-top: 1.5rem;
     }
 
 
-    .menu-section.on .menu-toggle .one{
+    .menu-section.on .menu-toggle .one {
         transform: rotate(45deg) translate(7px, 7px);
     }
 
-    .menu-section.on .menu-toggle .two{
+    .menu-section.on .menu-toggle .two {
         opacity: 0;
     }
 
-    .menu-section.on .menu-toggle .three{
+    .menu-section.on .menu-toggle .three {
         transform: rotate(-45deg) translate(8px, -9px);
         margin-top: 11px;
     }
 
-    .menu-section.on nav ul{
+    .menu-section.on nav ul {
         text-align: center;
         display: block;
     }
 
-    .menu-section.on nav ul a{
+    .menu-section.on nav ul a {
         font-size: 2rem;
         line-height: 5rem;
         display: block;
@@ -948,66 +974,69 @@ p{
 
 
 
-    .intro{
+    .intro {
         padding-top: 10rem;
         padding-bottom: 45rem;
     }
-   
-    .intro .qs{
+
+    .intro .qs {
         top: 11rem;
         left: -15rem;
     }
 
-    .intro img.qm{
+    .intro img.qm {
         position: absolute;
         margin-left: -19rem;
         top: 13rem;
     }
-    
-    .intro .qi{  
+
+    .intro .qi {
         top: 15rem;
         left: -19rem;
     }
-    
-    .intro h2{
+
+    .intro h2 {
         position: absolute;
         top: 0;
         right: -15.5rem;
         width: 30rem;
         font-size: 2.5rem;
     }
-    
-    .intro h4, .intro a, .meio h4, .meio a{
+
+    .intro h4,
+    .intro a,
+    .meio h4,
+    .meio a {
         display: none;
     }
-    
-    
-    
 
-    .meio{
+
+
+
+    .meio {
         padding-top: 10rem;
         padding-bottom: 45rem;
         text-align: left;
     }
-   
-    .meio .qs{
+
+    .meio .qs {
         top: 11rem;
         right: -16rem;
-       
+
     }
 
-    .meio img.qm{
+    .meio img.qm {
         position: absolute;
         right: -18rem;
         top: 13rem;
     }
-    
-    .meio .qi{  
+
+    .meio .qi {
         top: 15rem;
         right: -20rem;
     }
-    
-    .meio h2{
+
+    .meio h2 {
         position: absolute;
         top: 0;
         left: -13rem;
@@ -1024,7 +1053,7 @@ p{
         margin-bottom: 2.5rem;
     }
 
-    .footer-col h4::before{
+    .footer-col h4::before {
         text-align: center;
         margin-left: -0.5rem;
     }
@@ -1048,105 +1077,126 @@ p{
 
 
 /* mudar layout - CELULAR */
-@media (max-width: 425px){
+@media (max-width: 425px) {
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    .logo{
+    .logo {
         width: 2.0rem;
         height: 2.0rem;
     }
 
-    .header{
+    .header {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-    .one,.two,.three{
+
+    .one,
+    .two,
+    .three {
         height: 2px;
         width: 17px;
     }
 
-    .sacola{
+    .sacola {
         width: 20px;
         height: 20px;
         right: 4.3rem;
         top: 1.1rem;
     }
 
+     /*contador*/
+     #cart_count {
+        margin-left: -3.8rem;
+        margin-top: 1.75rem;
+        
+    }
 
-    .menu-section.on{
+    .fundo {
+        margin-left: -4.4rem;
+        margin-top: 1.7rem;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+
+    .menu-section.on {
         margin-right: -0.5rem;
     }
 
-    .menu-toggle{
+    .menu-toggle {
         margin-top: 1.5rem;
         margin-right: 2rem;
     }
-    .menu-section.on .menu-toggle{
+
+    .menu-section.on .menu-toggle {
         margin-right: 2.4rem;
     }
 
-    .menu-section.on .menu-toggle .three{
+    .menu-section.on .menu-toggle .three {
         transform: rotate(-45deg) translate(8px, -9px);
         margin-top: 13px;
     }
 
-    .owl-nav{
+    .owl-nav {
         left: 43%;
     }
 
-    .intro{
+    .intro {
         padding-bottom: 35rem;
     }
 
-    .intro .qs, .intro .qi, .meio .qs, .meio .qi{  
+    .intro .qs,
+    .intro .qi,
+    .meio .qs,
+    .meio .qi {
         display: none;
     }
 
-    .container .card{
+    .container .card {
         width: 90%;
-       margin-left: 5%;
+        margin-left: 5%;
     }
 
-    .ver{
+    .ver {
         margin-right: 5%;
     }
 
-    .intro img.qm{
+    .intro img.qm {
         position: absolute;
         margin-left: -16.9rem;
         top: 10rem;
-         width: 30rem;
+        width: 30rem;
         height: 15rem;
     }
-    
-    .intro h2{
+
+    .intro h2 {
         top: -2rem;
         right: -15.8rem;
         width: 30rem;
         font-size: 2.5rem;
     }
 
-    .meiio{
+    .meiio {
         display: none;
     }
 
-    .footer{
+    .footer {
         padding: 4rem 2rem;
     }
 
-    .footer-col{
+    .footer-col {
         text-align: center;
         width: 100%;
     }
 
-    .footer-col h4{
+    .footer-col h4 {
         margin-bottom: 1.5rem;
     }
-    
-    .footer-col h4::before{
+
+    .footer-col h4::before {
         display: none;
     }
 

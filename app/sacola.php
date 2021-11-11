@@ -48,7 +48,7 @@ if (isset($_POST['remove'])){
     <div class="row px-5">
         <div class="col-md-7">
             <div class="shopping-cart">
-            <a href="index.php"></a>
+            <a href="index.php">voltar</a>
                 <hr>
                 
 
