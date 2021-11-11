@@ -156,10 +156,6 @@ if (isset($_POST['add'])){
                         }
                     }
 
-                    if($total == 0 ){
-                        echo "<h5>Nenhum produto adicionado</h5>";
-                    }
-
                 ?>
 
             </div>
