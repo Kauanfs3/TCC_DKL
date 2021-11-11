@@ -88,8 +88,6 @@ if (isset($_POST['remove'])){
                                 }
                             }
                         }
-                    }else{
-                        echo "<h5>Nenhum produto adicionado</h5>";
                     }
 
                     $total = 0;
@@ -107,8 +105,6 @@ if (isset($_POST['remove'])){
                                 }
                             }
                         }
-                    }else{
-                        echo "<h5>Nenhum produto adicionado</h5>";
                     }
 
                     $total = 0;
@@ -126,8 +122,6 @@ if (isset($_POST['remove'])){
                                 }
                             }
                         }
-                    }else{
-                        echo "<h5>Nenhum produto adicionado</h5>";
                     }
 
                 ?>
