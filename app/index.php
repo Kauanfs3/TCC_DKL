@@ -2,44 +2,12 @@
 
 //iniciar sessao
 session_start();
+$_SESSION['pagina'] = basename ($_SERVER['PHP_SELF']);
 
 require_once('../prog/classes/conexao.php');
 require_once('../prog/componente.php');
 
-//prog CARRINHO
 
-if (isset($_POST['add'])){
-  //print_r ($_POST['id_produto']);   printar id
-
-  if(isset($_SESSION['cart'])){
-
-    $item_array_id = array_column($_SESSION['cart'],"id_produto");
-
-    if(in_array($_POST['id_produto'],$item_array_id)){
-      echo"<script>alert('O produto já está adicionado ao carrinho ..!')</script>";
-      echo"<script> window.location='index.php</script>";
-    
-    }else{
-      $count= count($_SESSION['cart']);
-      $item_array = array(
-        'id_produto'=> $_POST['id_produto']
-      );
-
-      $_SESSION['cart'][$count] = $item_array;
-      print_r($_SESSION['cart']);
-    }
-
-  }else{
-
-    $item_array = array(
-      'id_produto'=> $_POST['id_produto']
-    );
-
-    //criar nova sessao variavel
-    $_SESSION['cart'][0]=$item_array;
-    print_r($_SESSION['cart']);
-  }
-}
 
 ?>
 

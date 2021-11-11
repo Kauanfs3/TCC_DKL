@@ -3,7 +3,7 @@
 function component($nomeproduto, $valorproduto, $imgproduto, $idproduto){
     $element="
     <div class=\"item\">
-    <form action=\"index.php\" method=\"post\">
+    <form action=\"sacola.php\" method=\"post\">
                   <div class=\"card\">
                     <div class=\"imgBx\">
                     <img src=\"../img/$imgproduto\">
