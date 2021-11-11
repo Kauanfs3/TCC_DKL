@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26-Out-2021 às 01:58
--- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 8.0.12
+-- Tempo de geração: 11-Nov-2021 às 11:57
+-- Versão do servidor: 10.4.11-MariaDB
+-- versão do PHP: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,19 +31,20 @@ CREATE TABLE `produtos` (
   `id` int(11) NOT NULL,
   `nome_produto` varchar(25) DEFAULT NULL,
   `valor_produto` float NOT NULL,
-  `img_produto` varchar(100) NOT NULL
+  `img_produto` varchar(100) NOT NULL,
+  `categoria` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `produtos`
 --
 
-INSERT INTO `produtos` (`id`, `nome_produto`, `valor_produto`, `img_produto`) VALUES
-(1, 'Perfume testeeee 1', 200, 'p1.jpg'),
-(2, 'Perfume 2', 300, 'p2.jpg'),
-(3, 'Perfume 3', 400, 'p4.jpg'),
-(4, 'Perfume 4', 500, 'p5.jpeg'),
-(5, 'kauan porrinha', 0, 'propaganda.jpg');
+INSERT INTO `produtos` (`id`, `nome_produto`, `valor_produto`, `img_produto`, `categoria`) VALUES
+(1, 'Perfume testeeee 1', 200, 'p1.jpg', 'promocao'),
+(2, 'Perfume 2', 300, 'p2.jpg', 'novidades'),
+(3, 'Perfume 3', 400, 'p4.jpg', 'refils'),
+(4, 'Perfume 4', 500, 'p5.jpeg', 'kits'),
+(5, 'kauan porrinha', 0, 'propaganda.jpg', '');
 
 -- --------------------------------------------------------
 
