@@ -22,7 +22,7 @@ function component($nomeproduto, $valorproduto, $imgproduto, $idproduto){
                     <div class=\"content\">
                       <div class=\"productName\">
                         <h3>$nomeproduto</h3>
-                      </div>
+                      </div>             
                       <div class=\"price_rating\">
                         <h2>R$$valorproduto,00</h2>
                       </div>
