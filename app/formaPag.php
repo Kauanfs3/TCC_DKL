@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" dir="ltr">
 
 <head>
-   <title>Definir forma de pagamento</title>
-
-   <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- css -->
-        <link rel="stylesheet" href="../css/cadastra.css">
-        <link rel="stylesheet" href="../css/formaPag.css">        
+   <meta charset="utf-8">
+   <title>Cadastro endereço</title>
+   <link rel="stylesheet" href="../css/cadastra.css">
+   <link rel="stylesheet" href="../css/formaPag.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
    <div class="questionario">
 
-      <a href="../prog/sair.php">
+      <a href="../app/endereco.php">
          <img src="../img/previous.svg">
       </a>
 
@@ -78,39 +74,29 @@
 
 
             <div class="caixa">
-               <label class="ti">Nome completo </label><span class="obg">*</span>
-               <input class="box" type="text" name="nome" id="nome" required>
+               <label class="ti">Cidade </label><span class="obg">*</span>
+               <input class="box" type="text" name="cidade" id="cidade" required>
             </div>
 
             <div class="caixa">
-               <label class="ti">E-mail </label><span class="obg">*</span>
-               <input class="box" type="text" name="email" id="email" required>
+               <label class="ti">Estado </label><span class="obg">*</span>
+               <input class="box" type="text" name="estado" id="estado" required>
             </div>
-
-            <div class="caixa">
-               <label class="ti">Senha </label><span class="obg">*</span>
-               <input class="box" type="password" name="senha" id="senha" required>
-            </div>
-
-
 
             <div class="caixa">
                <label class="ti">Endereço </label><span class="obg">*</span>
                <input class="box" type="text" name="endereco" id="endereco" required>
             </div>
 
-            <div class="enviar">
-               <imput type="submit" value="Cadastrar" id="submit" name="submit">Seguir</imput>
-            </div>
+            <a href="formaPag.php?seguir1">
+               <div class="enviar">
+                  seguir
+               </div>
+            </a>
 
          </form>
       </div>
    </div>
-
-
-   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 
 </body>
 
