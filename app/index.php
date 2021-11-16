@@ -90,6 +90,7 @@ if (isset($_POST['add'])){
           <input type="submit" name="submit" value="ENTRAR"/>
 
           <div class="help">
+            <a href="pessoa.php" class="ajuda">Criar conta</a>
           </div>
         </form>
        
