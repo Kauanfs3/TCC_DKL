@@ -37,7 +37,7 @@ if (isset($_POST['add'])){
         );
   
         $_SESSION['cart'][$count] = $item_array;
-        print_r($_SESSION['cart']);
+       
       }
   
     }else{
@@ -101,11 +101,9 @@ if (isset($_POST['add'])){
                                 }
                             }
                         }
-                    }else{
-                        echo "<h5>Nenhum produto adicionado</h5>";
                     }
 
-                    $total = 0;
+                    
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -122,7 +120,7 @@ if (isset($_POST['add'])){
                         }
                     }
 
-                    $total = 0;
+                   
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -139,7 +137,7 @@ if (isset($_POST['add'])){
                         }
                     }
 
-                    $total = 0;
+                    
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -155,6 +153,12 @@ if (isset($_POST['add'])){
                             }
                         }
                     }
+
+                    if($total == 0){
+                        echo "Nao tem produto adicionado";
+                    }
+                        
+                    
 
                 ?>
 
@@ -192,6 +196,8 @@ if (isset($_POST['add'])){
                     </div>
                 </div>
             </div>
+
+            <a href="<?php echo $_SESSION['pagina'];?>">Continuar comprando</a>   
 
         </div>
     </div>

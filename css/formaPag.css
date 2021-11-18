@@ -10,3 +10,38 @@
 .etapa3{
   color: #527471;
 }
+
+.accordion{
+  position: relative;
+  margin-top: 5rem;
+  text-align: left;
+}
+
+
+
+.card-header{
+  background-color: rgba(220, 20, 60, 0.507);
+}
+
+.t-item{
+  border:none;
+  background-color: #527471;
+  color: #ffffff;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.dados{
+  margin-top: -2rem;
+  padding: 1rem;
+  background-color: #f7f4f4;
+}
+
+.questionario .t-item{
+  font-size: 1.4rem;
+}
+
+.caixa{
+  background-color: aqua;
+}

@@ -2,6 +2,7 @@
 
 //iniciar sessao
 session_start();
+$_SESSION['pagina'] = basename ($_SERVER['PHP_SELF']);
 
 require_once('../prog/classes/conexao.php');
 require_once('../prog/componente.php');

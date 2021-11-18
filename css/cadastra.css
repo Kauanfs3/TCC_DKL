@@ -33,7 +33,7 @@ html,body{
   justify-content: center;
 }
 
-.questionario .title{
+.questionario .titulo{
   width: 50%;
   font-size: 25px;
   font-weight: 1000;
@@ -138,7 +138,6 @@ a[type="submit"]{
 .endereco, .formPag, .pedido{
   padding: 0.9rem;
 }
-
 
 .etapa1, .etapa2, .etapa3, .etapa4{
   margin-top: 4rem;

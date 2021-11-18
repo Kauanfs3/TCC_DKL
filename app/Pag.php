@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt´br">
+<html lang="pt-br" dir="ltr">
 
 <head>
-   <title>Home</title>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <title>Cadastro endereço</title>
    <link rel="stylesheet" href="../css/cadastra.css">
-   <link rel="stylesheet" href="../css/formaPag.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/endereco.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
-   <!---------------------------------------------------------------CABEÇALHO----------------------------------------->
    <div class="questionario">
 
-      <a href="../app/endereco.php">
+      <a href="../app/pessoa.php">
          <img src="../img/previous.svg">
       </a>
 
@@ -71,12 +68,6 @@
          </div>
 
       </div>
-
-
-
-
-
-
 
       <div class="accordion" id="accordionExample">
          <div class="card-p">
@@ -182,23 +173,8 @@
             </div>
          </div>
       </div>
-
-
-
-      <a href="formaPag.php?seguir1">
-         <div class="enviar">
-            seguir
-         </div>
-      </a>
-
-
-
-
+      </div>
    </div>
-
-
-
-
 
 </body>
 
