@@ -89,7 +89,7 @@
 
             <a href="formaPag.php?seguir1">
                <div class="enviar">
-                  seguir
+                  Seguir
                </div>
             </a>
 

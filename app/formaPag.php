@@ -73,11 +73,6 @@
       </div>
 
 
-
-
-
-
-
       <div class="accordion" id="accordionExample">
          <div class="card-p">
             <div class="card" id="headingOne">
@@ -94,23 +89,56 @@
 
                         <div class="caixa">
                            <label class="ti">Número </label><span class="obg">*</span>
-                           <input class="box" type="tel" id="telefone" required>
+                           <input class="box" type="number" id="numero" required>
                         </div>
 
                         <div class="caixa">
                            <label class="ti">Nome do titular </label><span class="obg">*</span>
-                           <input class="box" type="tel" id="telefone" required>
+                           <input class="box" type="text" id="nome_titular" required>
                         </div>
 
-
                         <div class="caixa">
-                           <select id="expiryMonth" name="expiryMonth" class="box"><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+                           <label class="ti">Data de validade</label><span class="obg">*</span>
+                           <div class="row">
+                              <div class="fnb">
+                                 <select class="data transform-select">
+                                    <option selected="selected">Mês</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                 </select>
+
+                                 <select class="data transform-select">
+                                    <option selected="selected" value="">Ano</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                 </select>
+
+                              </div>
+                           </div>
                         </div>
 
-
                         <div class="caixa">
-                           <label class="ti">Data de nascimento </label><span class="obg">*</span>
-                           <input class="box" type="date" name="data_nascimento" id="data_nascimento" required>
+                           <label class="ti">Número </label><span class="obg">*</span>
+                           <input class="box" type="number" id="numero" required>
                         </div>
 
                      </form>
@@ -161,29 +189,15 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                <div class="dados">
-
-                  <div class="form-inner">
-                     <form action="#" class="signup" method="POST">
-
-                        <div class="caixa">
-                           <label class="ti">Telefone </label><span class="obg">*</span>
-                           <input class="box" type="tel" id="telefone" required>
-                        </div>
-
-                        <div class="caixa">
-                           <label class="ti">Data de nascimento </label><span class="obg">*</span>
-                           <input class="box" type="date" name="data_nascimento" id="data_nascimento" required>
-                        </div>
-
-                     </form>
-                  </div>
-
+                  <p>1. Clique em "Finalizar Pedido";</p>
+                  <p>2. Na tela seguinte copie o código;</p>
+                  <p>3. No App do seu banco, selecione a opção Pagar com o Pix e cole o código que você copiou;</p>
+                  <p>4. Confira os dados e confirme o pagamento;</p>
+                  <p>5. Pronto, o pagamento foi feito com sucesso!</p>
                </div>
             </div>
          </div>
       </div>
-
-
 
       <a href="formaPag.php?seguir1">
          <div class="enviar">
@@ -191,14 +205,7 @@
          </div>
       </a>
 
-
-
-
    </div>
-
-
-
-
 
 </body>
 

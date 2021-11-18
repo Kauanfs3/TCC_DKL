@@ -13,18 +13,29 @@
 
 .accordion{
   position: relative;
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   text-align: left;
 }
 
+body{
+  
+  background-color: #F6D5B6;
 
+}
+
+.questionario{
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
 
 .card-header{
   background-color: rgba(220, 20, 60, 0.507);
 }
 
 .t-item{
-  border:none;
+  border: none;
+  outline: none;
   background-color: #527471;
   color: #ffffff;
   text-align: left;
@@ -43,5 +54,18 @@
 }
 
 .caixa{
-  background-color: aqua;
+  margin-bottom: 3rem;
+}
+
+
+.data{
+  margin-left: 1.5rem;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  padding: 10px 9px;
+}
+
+p {
+  padding-top: 2rem;
+  font-size: 1.4rem;
 }

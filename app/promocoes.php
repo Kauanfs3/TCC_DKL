@@ -167,8 +167,7 @@ if (isset($_POST['add'])){
     </div>
 
     <div class="texti col-4">
-      <h2>NOVIDADE DA SEMANA</h2>
-      <h4>Venha comferir as promoções que preparamos para você, dá um clique!!</h4>
+      <h2>Promoções</h2>
       <a href="#">Veja aqui</a>
     </div>
 

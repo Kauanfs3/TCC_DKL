@@ -100,7 +100,7 @@
 
             <a href="endereco.php?seguir">
                <div class="enviar">
-                  seguir
+                  Seguir
                </div>
             </a>
 
