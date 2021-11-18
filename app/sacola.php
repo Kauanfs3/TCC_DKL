@@ -19,6 +19,38 @@ if (isset($_POST['remove'])){
   }
 }
 
+if (isset($_POST['add'])){
+  // print_r ($_POST['id_produto']);   printar id
+
+  if(isset($_SESSION['cart'])){
+
+    $item_array_id = array_column($_SESSION['cart'],"id_produto");
+
+    if(in_array($_POST['id_produto'],$item_array_id)){
+      echo"<script>alert('O produto já está adicionado ao carrinho ..!')</script>";
+      echo"<script> window.location='index.php</script>";
+    
+    }else{
+      $count= count($_SESSION['cart']);
+      $item_array = array(
+        'id_produto'=> $_POST['id_produto']
+      );
+
+      $_SESSION['cart'][$count] = $item_array;
+      print_r($_SESSION['cart']);
+    }
+
+  }else{
+
+    $item_array = array(
+      'id_produto'=> $_POST['id_produto']
+    );
+
+    //criar nova sessao variavel
+    $_SESSION['cart'][0]=$item_array;
+    print_r($_SESSION['cart']);
+  }
+}
 
 ?>
 
@@ -54,7 +86,10 @@ if (isset($_POST['remove'])){
 
                 <?php
 
+
                 $total = 0;
+
+
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -69,11 +104,8 @@ if (isset($_POST['remove'])){
                                 }
                             }
                         }
-                    }else{
-                        echo "<h5>Nenhum produto adicionado</h5>";
                     }
-
-                    $total = 0;
+                   
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -90,7 +122,7 @@ if (isset($_POST['remove'])){
                         }
                     }
 
-                    $total = 0;
+                    
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -107,7 +139,7 @@ if (isset($_POST['remove'])){
                         }
                     }
 
-                    $total = 0;
+                    
                     if (isset($_SESSION['cart'])){
 
                         $id_produto = array_column($_SESSION['cart'], 'id_produto');
@@ -160,8 +192,9 @@ if (isset($_POST['remove'])){
                     </div>
                 </div>
             </div>
-
         </div>
+
+        <a href="<?php echo $_SESSION['pagina'];?>">Continuar comprando</a>                                                                                                                                                                                                                                                                                                                                 
     </div>
 </div>
 
