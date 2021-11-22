@@ -18,9 +18,7 @@
 }
 
 body{
-  
   background-color: #F6D5B6;
-
 }
 
 .questionario{
@@ -44,7 +42,7 @@ body{
 }
 
 .dados{
-  margin-top: -2rem;
+  margin-top: -3rem;
   padding: 1rem;
   background-color: #f7f4f4;
 }
@@ -54,7 +52,7 @@ body{
 }
 
 .caixa{
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -66,6 +64,10 @@ body{
 }
 
 p {
-  padding-top: 2rem;
+  padding-top: 1rem;
   font-size: 1.4rem;
+}
+
+.p1{
+  padding-top: 2rem;
 }
