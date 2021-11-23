@@ -12,7 +12,6 @@ if (isset($_POST['remove'])) {
         foreach ($_SESSION['cart'] as $key => $value) {
             if ($value["id_produto"] == $_GET['id']) {
                 unset($_SESSION['cart'][$key]);
-                echo "<script>alert('Produto Removido...!')</script>";
                 echo "<script>window.location = 'sacola.php'</script>";
             }
         }
@@ -27,7 +26,6 @@ if (isset($_POST['add'])) {
         $item_array_id = array_column($_SESSION['cart'], "id_produto");
 
         if (in_array($_POST['id_produto'], $item_array_id)) {
-            echo "<script>alert('O produto já está adicionado ao carrinho ..!')</script>";
             echo "<script> window.location='index.php</script>";
         } else {
             $count = count($_SESSION['cart']);
@@ -152,7 +150,7 @@ if (isset($_POST['add'])) {
                     }
 
                     if ($total == 0) {
-                         echo "Nenhum produto foi adicionado na sacola!";
+                        echo "Nenhum produto foi adicionado na sacola!";
                     }
 
 
@@ -184,16 +182,15 @@ if (isset($_POST['add'])) {
                         </div>
 
                         <div class="col-md-6">
-                            <h6>$<?php echo $total; ?></h6>
+                            <h6>R$<?php echo $total; ?></h6>
                             <h6 class="text-success">GRATIS</h6>
                             <hr>
-                            <h6>$
-                                <?php
-                                echo $total;
-                                ?>
-                            </h6>
+                            <h6>R$<?php echo $total; ?></h6>
                         </div>
                     </div>
+                </div>
+                <div class="enviar">
+                    <input type="submit" value="Cadastrar" id="submit" name="submit" />
                 </div>
 
             </div>

@@ -2,13 +2,37 @@
 .voltar{
     width: 1rem;
     height: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1.3rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
 }
 
 .info{
     background: #d6d6d644;
-    margin-top: 1rem;
+    margin-top: 3.2rem;
     margin-left: 8rem;
     padding: 2rem;
     border-radius: 0.3rem;
 }
+
+  .nome{
+      margin-top: 2rem;
+  }
+
+  .valor{
+    color: rgba(59, 59, 59, 0.815);
+    font-size: 1.2rem;
+}
+
+  
+  .remove[type="submit"]{
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    border: 0px;
+    border-radius: 0.3rem;
+    background-color: #527471;
+    margin-top: 1rem;
+  }

@@ -45,9 +45,9 @@ function cartElement($imgproduto,$nomeproduto, $valorproduto, $idproduto){
                                 <img src=\"../img/$imgproduto\" alt=\"Image1\" class=\"img-fluid\">
                             </div>
                             <div class=\"col-md-6\">
-                                <h5 class=\"pt-2\">$nomeproduto</h5>
-                                <h5 class=\"pt-2\">$$valorproduto</h5>
-                                <button type=\"submit\" class=\"btn btn-danger mx-2\" name=\"remove\">Remover</button>
+                                <h5 class=\"nome\">$nomeproduto</h5>
+                                <h5 class=\"valor\">R$$valorproduto</h5>
+                                <button type=\"submit\" class=\"remove\" name=\"remove\">Remover</button>
                             </div>
                            
                         </div>
