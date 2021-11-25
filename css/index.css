@@ -35,9 +35,11 @@ body {
 }
 
 .logo {
-    width: 3rem;
-    height: 3rem;
+    width:4rem;
+    height: 4rem;
     margin-top: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
 }
 
 header a svg {
@@ -233,7 +235,7 @@ input[type="password"]:hover {
 
 /*contador*/
 #cart_count {
-    color: rgb(255, 255, 255);
+    color: #F6D5B6;
     position: absolute;
     margin-left: 5rem;
     margin-top: -1.4rem;
@@ -864,6 +866,7 @@ p {
     #cart_count {
         margin-left: -4.27rem;
         margin-top: 1.49rem;
+        color: #F6D5B6;
     }
 
     .fundo {

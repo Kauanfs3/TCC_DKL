@@ -36,3 +36,21 @@
     background-color: #527471;
     margin-top: 1rem;
   }
+
+  .seguir[type="submit"]{
+    letter-spacing: 0.1rem;
+    position: absolute;
+    width: 23.2rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    border: 0px;
+    border-radius: 0.3rem;
+    background-color: #527471;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 8rem;
+  }
+
+

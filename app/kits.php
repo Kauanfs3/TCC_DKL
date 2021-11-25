@@ -128,10 +128,10 @@ if (isset($_POST['add'])) {
               <li><a href="#">Perfil</a></li>
               <li><a href="#">Modo noturno</a></li>
               <li><a class="#" href="index.php">Home</a></li>
-              <li><a href="#">Promoções</a></li>
-              <li><a href="#">Perfumes</a></li>
-              <li><a href="#">Refil</a></li>
-              <li><a href="#">Kits</a></li>
+              <li><a href="promocoes.php">Promoções</a></li>
+              <li><a href="perfumes.php">Perfumes</a></li>
+              <li><a href="refils.php">Refil</a></li>
+              <li><a href="kits.php">Kits</a></li>
             </ul>
           </div>
 

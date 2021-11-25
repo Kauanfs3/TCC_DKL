@@ -37,7 +37,7 @@ require_once('../prog/componente.php');
   <header class="header fixed-top">
     <nav>
       <ul class="marca">
-        <li><a href="index.php"><img class="logo" src="../img/logo.png"></a></li>
+        <li><a href="index.php"><img class="logo" src="../img/logo-editada.svg"></a></li>
         <li><a class="nome" href="index.php">Elementary</a></li>
       </ul>
     </nav>
@@ -100,10 +100,10 @@ require_once('../prog/componente.php');
               <li><a href="#">Perfil</a></li>
               <li><a href="#">Modo noturno</a></li>
               <li><a class="#" href="index.php">Home</a></li>
-              <li><a href="#">Promoções</a></li>
-              <li><a href="#">Perfumes</a></li>
-              <li><a href="#">Refil</a></li>
-              <li><a href="#">Kits</a></li>
+              <li><a href="promocoes.php">Promoções</a></li>
+              <li><a href="perfumes.php">Perfumes</a></li>
+              <li><a href="refils.php">Refil</a></li>
+              <li><a href="kits.php">Kits</a></li>
             </ul>
           </div>
 
@@ -118,7 +118,7 @@ require_once('../prog/componente.php');
   <nav class="cabecalho" id="navbar">
     <div class="links">
       <ul>
-        <li><a class="#" href="index.php">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="promocoes.php">Promoções</a></li>
         <li><a href="perfumes.php">Perfumes</a></li>
         <li><a href="refils.php">Refil</a></li>

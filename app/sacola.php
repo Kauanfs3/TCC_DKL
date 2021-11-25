@@ -162,7 +162,7 @@ if (isset($_POST['add'])) {
             <div class="col">
 
                 <div class="pt-4 info">
-                    <h6>Informações da compra</h6>
+                    <h6 class="titulo">Informações da compra</h6>
                     <hr>
                     <div class="row ">
                         <div class="col-md-6">
@@ -189,8 +189,8 @@ if (isset($_POST['add'])) {
                         </div>
                     </div>
                 </div>
-                <div class="enviar">
-                    <input type="submit" value="Cadastrar" id="submit" name="submit" />
+                <div >
+                    <input class="seguir" type="submit" value="Finalizar compra" id="submit">
                 </div>
 
             </div>

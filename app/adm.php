@@ -10,44 +10,13 @@ require_once('../prog/componente.php');
 
 //prog CARRINHO
 
-if (isset($_POST['add'])) {
-  //print_r ($_POST['id_produto']);   printar id
-
-  if (isset($_SESSION['cart'])) {
-
-    $item_array_id = array_column($_SESSION['cart'], "id_produto");
-
-    if (in_array($_POST['id_produto'], $item_array_id)) {
-      echo "<script>alert('O produto já está adicionado ao carrinho ..!')</script>";
-      echo "<script> window.location='index.php</script>";
-    } else {
-      $count = count($_SESSION['cart']);
-      $item_array = array(
-        'id_produto' => $_POST['id_produto']
-      );
-
-      $_SESSION['cart'][$count] = $item_array;
-      print_r($_SESSION['cart']);
-    }
-  } else {
-
-    $item_array = array(
-      'id_produto' => $_POST['id_produto']
-    );
-
-    //criar nova sessao variavel
-    $_SESSION['cart'][0] = $item_array;
-    print_r($_SESSION['cart']);
-  }
-}
-
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt´br">
 
 <head>
-  <title>Promoções</title>
+  <title>Home</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -62,10 +31,13 @@ if (isset($_POST['add'])) {
 </head>
 
 <body>
+
+  <!---------------------------------------------------------------CABEÇALHO----------------------------------------->
+
   <header class="header fixed-top">
     <nav>
       <ul class="marca">
-        <li><a href="index.php"><img class="logo" src="../img/logo.png"></a></li>
+        <li><a href="index.php"><img class="logo" src="../img/-editada.svg"></a></li>
         <li><a class="nome" href="index.php">Elementary</a></li>
       </ul>
     </nav>
@@ -128,10 +100,10 @@ if (isset($_POST['add'])) {
               <li><a href="#">Perfil</a></li>
               <li><a href="#">Modo noturno</a></li>
               <li><a class="#" href="index.php">Home</a></li>
-              <li><a href="promocoes.php">Promoções</a></li>
-              <li><a href="perfumes.php">Perfumes</a></li>
-              <li><a href="refils.php">Refil</a></li>
-              <li><a href="kits.php">Kits</a></li>
+              <li><a href="#">Promoções</a></li>
+              <li><a href="#">Perfumes</a></li>
+              <li><a href="#">Refil</a></li>
+              <li><a href="#">Kits</a></li>
             </ul>
           </div>
 
@@ -162,7 +134,6 @@ if (isset($_POST['add'])) {
 
 
 
-
   <!---------------------------------------------------------------INICIO----------------------------------------->
   <div class="container-fluid">
     <div class="intro row">
@@ -170,7 +141,8 @@ if (isset($_POST['add'])) {
       </div>
 
       <div class="texti col-4">
-        <h2>Promoções</h2>
+        <h2>NOVIDADE DA SEMANA</h2>
+        <h4>Venha conferir as promoções que preparamos para você, dá um clique!!</h4>
         <a href="#">Veja aqui</a>
       </div>
 
@@ -188,8 +160,10 @@ if (isset($_POST['add'])) {
     </div>
   </div>
 
-  <!---------------------------------------------------------------LINHA 1----------------------------------------->
 
+
+
+  <!---------------------------------------------------------------LINHA 1----------------------------------------->
   <div class="titulo container-fluid">
     <h1 class="ti">Promoções</h1>
   </div>
@@ -220,6 +194,10 @@ if (isset($_POST['add'])) {
     </div>
 
   </div>
+
+
+
+
   <!---------------------------------------------------------------LINHA 2----------------------------------------->
   <div class="titulo container-fluid">
     <h1 class="ti">Perfumes</h1>
@@ -245,6 +223,37 @@ if (isset($_POST['add'])) {
       <a class="ver" href="perfumes.php">Ver mais...</a>
     </div>
 
+  </div>
+
+
+
+
+
+  <!---------------------------------------------------------------QUEM SOMOS----------------------------------------->
+  <div class="meiio titulo container-fluid">
+  </div>
+
+  <div class="meiio container-fluid">
+    <div class="meio row">
+      <div class="col-2">
+      </div>
+
+      <div class="col-4">
+        <div class="qs"></div>
+        <img class="qm " src="../img/propaganda.jpg">
+        <div class="qi"></div>
+      </div>
+
+      <div class="texti col-4">
+        <h2>SOBRE NÓS</h2>
+        <h4>Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</h4>
+        <a href="#">Veja aqui</a>
+      </div>
+
+      <div class="col-2">
+      </div>
+
+    </div>
   </div>
 
 
@@ -315,10 +324,10 @@ if (isset($_POST['add'])) {
 
         <div class="footer-col">
           <h4>Inicio</h4>
-          <p><a href="#">Perfumes</a></p>
-          <p><a href="#">Promoções</a></p>
-          <p><a href="#">Refil</a></p>
-          <p><a href="#">Kits</a></p>
+          <p><a href="../app/perfumes.php">Perfumes</a></p>
+          <p><a href="../app/promocoes.php">Promoções</a></p>
+          <p><a href="../app/refils.php">Refil</a></p>
+          <p><a href="../app/kits.php">Kits</a></p>
         </div>
 
         <div class="footer-col">
@@ -345,6 +354,13 @@ if (isset($_POST['add'])) {
       </div>
     </div>
   </footer>
+
+
+
+
+
+
+
 
 
 
@@ -428,6 +444,7 @@ if (isset($_POST['add'])) {
       })
     }
   </script>
+
 
 </body>
 
