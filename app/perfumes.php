@@ -4,7 +4,7 @@
 session_start();
 $_SESSION['pagina'] = basename($_SERVER['PHP_SELF']);
 
-require_once('../prog/classes/conexao.php');
+require_once('../prog/conexao.php');
 require_once('../prog/componente.php');
 
 //prog CARRINHO
@@ -87,7 +87,7 @@ if (isset($_POST['add'])) {
           <input type="submit" name="submit" value="ENTRAR" />
 
           <div class="help">
-            <a href="pessoa.php" class="ajuda">Criar conta</a>
+            <a href="cadastro.php" class="ajuda">Criar conta</a>
           </div>
         </form>
 

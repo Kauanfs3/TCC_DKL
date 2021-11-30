@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+  font-family: Helvetica,"Helvetica Neue",Arial,sans-serif;
+}
+
+html,body{
+    display: grid;
+    place-items: center;
+    background-color: #F6D5B6;
+  }
+
+.erros{
+    width: 300px;
+    padding: 10px;
+    background: rgba(40, 208, 141, 0.9);
+    margin: 10px 10px 0 auto;
+    border-radius: 4px;
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+#formulario{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+#formulario fieldset:not(:first-of-type){
+    display:none;
+}
+
+
+#formulario #progress{
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#formulario #progress li {
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    float: left;
+    width: 24.24%;
+    position: relative;
+}
+
+#formulario #progress li ::before{
+    
+    width: 20px;
+    display: block;
+    line-height: 20px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:0 auto 10px auto ;
+    font-family: Helvetica,"Helvetica Neue",Arial,sans-serif;
+}
+
+#formulario #progress li ::after{
+    content: '';
+    width: 100%;
+    background: white;
+    height: 2px;
+    position: absolute;
+    top:9px ;
+    left: -50%;
+    z-index:-1 ;
+}
+
+#formulario #progress li:first-child:after{
+    content: none;
+}
+
+#formulario #progress li.ativo:before,  #formulario #progress li.ativo:after{
+    background: rgba(40, 208, 141, 0.9);
+    color: white;
+    text-shadow: 0 1px 0;
+}
+
+.botao{
+    color:red ;
+}
+
+
+
+
+

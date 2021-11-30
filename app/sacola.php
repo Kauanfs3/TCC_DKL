@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once('../prog/classes/conexao.php');
+require_once('../prog/conexao.php');
 require_once('../prog/componente.php');
 
 $db = new Conexao("tcc", "Produtos");
